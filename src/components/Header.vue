@@ -262,4 +262,11 @@
 			}
 		}
 	}
+
+	@media (min-width: 1440px){
+		.header-container {
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+	}
 </style>
