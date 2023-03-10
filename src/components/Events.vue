@@ -74,6 +74,9 @@
       "img2 img2 img2"
       "img3-1 img3-2 img3-3";
    gap: 15px;
+   &::-webkit-scrollbar {
+ 	 display: none;
+	}
 
    img {
       width: 100%;
