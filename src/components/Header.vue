@@ -124,7 +124,6 @@
 		padding: 20px 5% 0;
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 50px;
 		
 		>.logo{
 			display: flex;
