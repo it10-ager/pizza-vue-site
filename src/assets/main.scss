@@ -3,6 +3,10 @@
 @import 'vars';
 @import 'extends';
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background: #1E1E1E;
 }
