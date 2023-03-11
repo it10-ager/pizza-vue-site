@@ -43,21 +43,38 @@
 
 <script>
 	export default {
-		data(){
-			return{
+		data() {
+			return {
 				isPositioned: false,
 				activeTab: 'home',
 			};
 		},
 
 		methods: {
-			menuBurger(){
-				var containerLeft = document.querySelector('.menu-container')
+			menuBurger() {
+				var container = document.querySelector('.menu-container')
+				var links = document.querySelectorAll('.menu-container .nav ul a')
 				this.isPositioned = !this.isPositioned;
 
-				if(this.isPositioned) 
-					containerLeft.classList.add("left-side")
-				else containerLeft.classList.remove("left-side")
+				for (var i = 0; i < links.length; i++) {
+					if (this.isPositioned) {
+						container.classList.add("visible-side")
+						document.body.style.overflow = 'hidden'
+						links[i].removeEventListener('click', this.hideMenu)
+						links[i].addEventListener('click', this.hideMenu)
+					} else {
+						container.classList.remove("visible-side")
+						document.body.style.overflow = 'auto'
+						links[i].removeEventListener('click', this.hideMenu)
+					}
+				}
+			},
+
+			hideMenu() {
+				var container = document.querySelector('.menu-container')
+				container.classList.remove("visible-side")
+				document.body.style.overflow = 'auto'
+				this.isPositioned = false;
 			},
 		},
 	};
@@ -81,7 +98,7 @@
 		opacity: 0;
 		transition: opacity 0.4s ease;
 
-		&.left-side {
+		&.visible-side {
 			opacity: 1;
 			z-index: 10;
 		}

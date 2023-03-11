@@ -50,7 +50,7 @@ export default {
 
 .preview__row {
    overflow: hidden;
-   padding: 50px 0;
+   padding: 100px 0;
 }
 
 .preview__img {
