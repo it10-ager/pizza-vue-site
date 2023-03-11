@@ -1,59 +1,57 @@
 <template>
-   <div class="events__container">
-      <div class="events__body">
+   <div class="events__body">
+      <div class="events__title">Events</div>
+      <p class="events__text">There are regular events in our pizzeria that will allow you to eat delicious food for a
+         lower
+         price!</p>
+   </div>
+   <div class="events__images" id="events">
+      <div class="events__body-img">
          <div class="events__title">Events</div>
-         <p class="events__text">There are regular events in our pizzeria that will allow you to eat delicious food for a
+         <p class="events__text">There are regular events in our pizzeria that will allow you to eat delicious food for
+            a
             lower
             price!</p>
       </div>
-      <div class="events__images">
-         <div class="events__body-img">
-            <div class="events__title">Events</div>
-            <p class="events__text">There are regular events in our pizzeria that will allow you to eat delicious food for
-               a
-               lower
-               price!</p>
-         </div>
-         <div class="events__img1 events__img">
-            <img src="../assets/img/events/row1-1.png" alt="how we cooking">
-            <span>HOW WE <br> COOKING</span>
+      <div class="events__img1 events__img">
+         <img src="../assets/img/events/row1-1.png" alt="how we cooking">
+         <span>HOW WE <br> COOKING</span>
+         <button type="button">More</button>
+      </div>
+      <div class="events__img2 events__img">
+         <img src="../assets/img/events/row1-2.png" alt="our blog">
+         <span>OUR BLOG</span>
+         <button type="button">More</button>
+      </div>
+      <div class="events__img-2row">
+         <div class="events__img3 events__img">
+            <img src="../assets/img/events/row2-1.png" alt="sale">
+            <span>TWO PIZZA <br> FOR 1 PRICE</span>
             <button type="button">More</button>
+            <img class="icon-becon" src="../assets/img/events/bacon.png" alt="becon">
          </div>
-         <div class="events__img2 events__img">
-            <img src="../assets/img/events/row1-2.png" alt="our blog">
-            <span>OUR BLOG</span>
+         <div class="events__img4 events__img">
+            <img src="../assets/img/events/row2-2.png" alt="kitchen tour">
+            <span>KITCHEN <br> TOUR</span>
             <button type="button">More</button>
+            <img class="icon-buritto" src="../assets/img/events/buritto.png" alt="buritto">
          </div>
-         <div class="events__img-2row">
-            <div class="events__img3 events__img">
-               <img src="../assets/img/events/row2-1.png" alt="sale">
-               <span>TWO PIZZA <br> FOR 1 PRICE</span>
-               <button type="button">More</button>
-               <img class="icon-becon" src="../assets/img/events/bacon.svg" alt="becon">
-            </div>
-            <div class="events__img4 events__img">
-               <img src="../assets/img/events/row2-2.png" alt="kitchen tour">
-               <span>KITCHEN <br> TOUR</span>
-               <button type="button">More</button>
-               <img class="icon-buritto" src="../assets/img/events/buritto.svg" alt="buritto">
-            </div>
-         </div>
-         <div class="events__img5 events__img">
-            <img src="../assets/img/events/row3-1.png" alt="profitable proposition">
-            <span>FREE COFFEE <br> FOR 3 PIZZA</span>
-            <button type="button">More</button>
-            <img class="icon-coffee" src="../assets/img/events/cofee.svg" alt="coffee">
-         </div>
-         <div class="events__img6 events__img">
-            <img src="../assets/img/events/row3-2.png" alt="our instagram">
-            <span>OUR <br> INSTAGRAM</span>
-            <button type="button">More</button>
-         </div>
-         <div class="events__img7 events__img">
-            <img src="../assets/img/events/row3-3.png" alt="where are you choose us?">
-            <span>WHERE ARE <br> YOU CHOOSE <br> US?</span>
-            <button type="button">More</button>
-         </div>
+      </div>
+      <div class="events__img5 events__img">
+         <img src="../assets/img/events/row3-1.png" alt="profitable proposition">
+         <span>FREE COFFEE <br> FOR 3 PIZZA</span>
+         <button type="button">More</button>
+         <img class="icon-coffee" src="../assets/img/events/coffee.png" alt="coffee">
+      </div>
+      <div class="events__img6 events__img">
+         <img src="../assets/img/events/row3-2.png" alt="our instagram">
+         <span>OUR <br> INSTAGRAM</span>
+         <button type="button">More</button>
+      </div>
+      <div class="events__img7 events__img">
+         <img src="../assets/img/events/row3-3.png" alt="where are you choose us?">
+         <span>WHERE ARE <br> YOU CHOOSE <br> US?</span>
+         <button type="button">More</button>
       </div>
    </div>
 </template>
@@ -74,9 +72,10 @@
       "img2 img2 img2"
       "img3-1 img3-2 img3-3";
    gap: 15px;
+
    &::-webkit-scrollbar {
- 	 display: none;
-	}
+      display: none;
+   }
 
    img {
       width: 100%;
@@ -197,7 +196,7 @@
 
    .events__images {
       position: relative;
-      padding: 0 10% 75px;
+      padding: 0 5% 75px;
       overflow-x: scroll;
       overflow-y: hidden;
       -ms-overflow-style: none;
@@ -241,8 +240,8 @@
 
          .icon-becon {
             position: absolute;
-            top: -128px;
-            left: -120px;
+            top: -123px;
+            left: -102px;
             width: 245px;
             height: 257px;
          }
@@ -290,13 +289,9 @@
 }
 
 @media (min-width: 1440px) {
-   .events__container {
+   .events__images {
       max-width: 1440px;
       margin: 0 auto;
-   }
-
-   .events__images {
-      overflow-x: hidden;
    }
 }
 </style>

@@ -56,9 +56,8 @@ export default {
 .preview__img {
    width: 243px;
    height: 365px;
-   margin: 0 auto;
+   margin: 0 auto 30px;
    position: relative;
-   margin-bottom: 30px;
 
    img {
       width: 100%;
