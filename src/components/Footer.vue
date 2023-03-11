@@ -64,6 +64,7 @@
 		padding: 0 5% 40px;
 		display: flex;
 		flex-direction: column;
+		background: linear-gradient(245.71deg, #170A00 4.96%, #170600 33.7%, #0F0700 68.41%, #170A00 96.42%);
 		
 		>.footer-nav {
 			margin-bottom: 40px;
